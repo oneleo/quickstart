@@ -91,8 +91,9 @@
 > choco install -y microsoft-office-deployment --params="'/64bit /DisableUpdate:TRUE /Product:ProPlus2021Volume,VisioPro2021Volume,ProjectStd2021Volume /ProofingToolLanguage:zh-tw /Exclude:OneDrive,Lync /RemoveMSI /LicenseKey:FXYTK-NJJ8C-GB6DW-3DYQT-6F7TH'"
 
 ### Obtain Office KMS authorization
+### Office KMS Keys: https://learn.microsoft.com/zh-cn/deployoffice/vlactivation/gvlks
  > cd "C:\Program Files\Microsoft Office\Office16"
-> cscript ospp.vbs /sethst:"<YOUR KMS SERVER>"
+> cscript ospp.vbs /sethst:"<YOUR KMS SERVER URL>"
 > cscript ospp.vbs /act
 > cscript ospp.vbs /dstatus
 ```

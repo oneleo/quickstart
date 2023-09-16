@@ -47,3 +47,13 @@
 ### Press Shift + F10
 > oobe\bypassnro
 ```
+
+- Obtain [Windows KMS](https://learn.microsoft.com/zh-tw/windows-server/get-started/kms-client-activation-keys) authorization
+
+```shell
+> cmd
+> %SYSTEMROOT%\system32\slmgr.vbs /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
+> %SYSTEMROOT%\system32\slmgr.vbs /skms <YOUR KMS SERVER URL>
+> %SYSTEMROOT%\system32\slmgr.vbs /ato
+> %SYSTEMROOT%\system32\slmgr.vbs /dlv
+```
