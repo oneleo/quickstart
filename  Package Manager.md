@@ -28,7 +28,7 @@
 % brew install --cask cakebrew blackhole-2ch karabiner-elements gpg-suite-no-mail
 
 ### Development
-% brew install --cask postman github graphql-playground visual-studio-code
+% brew install --cask postman github ganache graphql-playground visual-studio-code
 
 ### Browser
 % brew install --cask firefox google-chrome microsoft-edge
@@ -43,7 +43,7 @@
 - Add other command line tools
 
 ```shell
-% brew install git nvm podman ffmpeg lame yt-dlp
+% brew install git nvm podman ffmpeg lame imagemagick yt-dlp
 
 ### Edit ~/.zshrc
 % mkdir -p "$HOME/.nvm" && code ~/.zshrc
@@ -56,6 +56,15 @@
   alias git='LC_ALL=en_GB git'
 ### +++++++++++++++++++++++++++++++++
 ```
+
+- Add other desktop tools from App Store
+  - [Xcode](https://apps.apple.com/us/app/xcode/id497799835)
+  - [Keynote](https://apps.apple.com/tw/app/keynote/id409183694)
+  - [Numbers](https://apps.apple.com/us/app/numbers/id409203825)
+  - [Pages](https://apps.apple.com/tw/app/pages/id409201541)
+  - [iMovie](https://apps.apple.com/tw/app/imovie/id408981434)
+  - [ColorSlurp](https://apps.apple.com/tr/app/colorslurp/id1287239339)
+  - [Gifski](https://apps.apple.com/app/id1351639930)
 
 ## Windows
 
@@ -80,7 +89,7 @@
 > choco install -y telegram.install
 
 ### Media
-> choco install -y obs-studio vlc k-litecodecpackbasic yt-dlp ffmpeg lame avidemux audacity audacity-ffmpeg audacity-lame
+> choco install -y obs-studio vlc k-litecodecpackbasic yt-dlp ffmpeg lame avidemux audacity audacity-ffmpeg audacity-lame imagemagick.app
 
 ### Tools
 > choco install -y notepadplusplus.install vmwareworkstation adobereader 7zip.install winrar rufus winscp.install
