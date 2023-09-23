@@ -1,8 +1,10 @@
-# Initial React Project
+# Initial Svelte Project
 
 ## Initail
 
 ```shell
+% mkdir -p hello_svelte && code hello_svelte
+
 % PKG1="webapp"
 
 % pnpm init

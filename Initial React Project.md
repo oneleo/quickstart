@@ -3,6 +3,8 @@
 ## Initail
 
 ```shell
+% mkdir -p hello_react && code hello_react
+
 % PKG1="webapp"
 
 % pnpm init

@@ -3,6 +3,8 @@
 ## Initail
 
 ```shell
+% mkdir -p hello_plasmo && code hello_plasmo
+
 % PKG1="extension"
 
 % pnpm init

@@ -15,11 +15,16 @@
 
 % code ~/.zshrc
 ### Edit ~/.zshrc
-# GHCup
+# Haskell
 export GHCUP_HOME="${HOME}/.ghcup/bin"
+export CABAL_HOME="${HOME}/.cabal/bin"
 case ":${PATH}:" in
   *":${GHCUP_HOME}:"*) ;;
   *) export PATH="${PATH}:${GHCUP_HOME}" ;;
+esac
+case ":${PATH}:" in
+  *":${CABAL_HOME}:"*) ;;
+  *) export PATH="${PATH}:${CABAL_HOME}" ;;
 esac
 ###
 ```
@@ -40,6 +45,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 
 ## Install GHC, HLS, cabal, Stack
 
+- Install GHC, HLS, cabal, Stack
+
 ```shell
 %> ghcup tui
 
@@ -49,13 +56,42 @@ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 ### Press "enter" to continue
 ```
 
-## Check GHC, HLS, cabal, Stack version
+- Write default cabal configuration
 
 ```shell
+% cabal user-config init -f
+% code ${HOME}/.cabal/config
+```
+
+- Check GHC, HLS, cabal, Stack version
+
+```shell
+%> ghcup list
 %> ghc --version
 %> ghci --version
 %> stack --version
 %> cabal --version
 %> haddock --version
 %> haskell-language-server-wrapper --version
+```
+
+## Initial Haskell Project
+
+- Initial Haskell Project
+
+```shell
+%> mkdir -p hello_haskell && code hello_haskell
+
+%> cabal init --interactive
+### Configuration
+Should I generate a simple project with sensible defaults? [default: y] y
+###
+```
+
+- Run Haskell Project
+
+```shell
+%> cabal install
+%> cabal build
+%> cabal run
 ```
