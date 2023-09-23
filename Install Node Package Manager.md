@@ -7,13 +7,12 @@
 ```shell
 % brew install nvm
 
-### Edit ~/.zshrc
 % mkdir -p "$HOME/.nvm" && code ~/.zshrc
-### +++++++++++++++++++++++++++++++++
+### Edit ~/.zshrc
   export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-### +++++++++++++++++++++++++++++++++
+###
 ```
 
 - Add [NPM](https://www.npmjs.com/), [PNPM](https://pnpm.io/), and [Yarn](https://yarnpkg.com/) V1

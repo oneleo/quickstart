@@ -1,6 +1,6 @@
-# Package Manager
+# MacOS & Windows Package Manager
 
-## macOS and Linux
+## macOS
 
 - Install [Homebrew](https://brew.sh/)
 
@@ -28,7 +28,7 @@
 % brew install --cask cakebrew blackhole-2ch karabiner-elements gpg-suite-no-mail
 
 ### Development
-% brew install --cask postman github ganache graphql-playground visual-studio-code
+% brew install --cask postman github ganache ghcup graphql-playground visual-studio-code
 
 ### Browser
 % brew install --cask firefox google-chrome microsoft-edge
@@ -45,16 +45,15 @@
 ```shell
 % brew install git nvm podman ffmpeg lame imagemagick yt-dlp
 
-### Edit ~/.zshrc
 % mkdir -p "$HOME/.nvm" && code ~/.zshrc
-### +++++++++++++++++++++++++++++++++
+### Edit ~/.zshrc
   export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
   # Git language
   alias git='LC_ALL=en_GB git'
-### +++++++++++++++++++++++++++++++++
+###
 ```
 
 - Add other desktop tools from App Store
@@ -101,7 +100,7 @@
 
 ### Obtain Office KMS authorization
 ### Office KMS Keys: https://learn.microsoft.com/zh-cn/deployoffice/vlactivation/gvlks
- > cd "C:\Program Files\Microsoft Office\Office16"
+> cd "C:\Program Files\Microsoft Office\Office16"
 > cscript ospp.vbs /sethst:"<YOUR KMS SERVER URL>"
 > cscript ospp.vbs /act
 > cscript ospp.vbs /dstatus

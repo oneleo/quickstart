@@ -10,10 +10,10 @@
 % mkdir -p packages/{${PKG1},}
 
 % code pnpm-workspace.yaml
-### +++++++++++++++++++++++++++++++++
+### Edit pnpm-workspace.yaml
 packages:
   - "packages/*"
-### +++++++++++++++++++++++++++++++++
+###
 ```
 
 ## Create Svelte project
