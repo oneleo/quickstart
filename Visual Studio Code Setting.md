@@ -39,7 +39,7 @@
   // 若模式為全小寫，搜尋時不會區分大小寫; 否則會區分大小寫
   "search.smartCase": true,
   // 設置搜尋結果顯示上限，null = 無上限
-  "search.maxResults": null,
+  "search.maxResults": 333,
   // 設置搜尋欄的位置
   "search.actionsPosition": "auto",
   // 設置搜尋欄的顯示方式
@@ -49,7 +49,7 @@
   // 建立新的搜尋編輯器時，要使用的周圍內容預設行數
   "search.searchEditor.defaultNumberOfContextLines": 2,
   // 控制搜尋檢視應讀取或修改 macOS 上的共用尋找剪貼簿
-  "search.globalFindClipboard": true,
+  "search.globalFindClipboard": false,
   // 控制新的 [搜尋: 在檔案中尋找] 及 [在資料夾中尋找] 作業發生位置: 在搜尋檢視或在搜尋編輯器中
   "search.mode": "newEditor",
   // 允許在使用中的編輯器沒有選取項目時，從最接近游標的文字植入搜尋
@@ -58,16 +58,17 @@
   "search.quickOpen.includeSymbols": true,
   // 是否顯示上方的 tabs
   "workbench.editor.showTabs": true,
+  // 未存檔的 tabs 高亮顯示
+  "workbench.editor.highlightModifiedTabs": true,
   // 設置上方 tabs 寬度的最大值及最小值
   "workbench.editor.tabSizing": "fixed",
-  "workbench.editor.tabSizingFixedMaxWidth": 180,
-  "workbench.editor.tabSizingFixedMinWidth": 180,
+  // 註：若 Min 及 Max 相同，會因為沒有彈性，tab 長度稍有不同會不斷跳下一列或回復
+  "workbench.editor.tabSizingFixedMinWidth": 133,
+  "workbench.editor.tabSizingFixedMaxWidth": 199,
   // 設置上方 pined tabs 的寬度
   "workbench.editor.pinnedTabSizing": "normal",
   // 設置上方 tabs 的關閉鈕位置
   "workbench.editor.tabCloseButton": "right",
-  // 未存檔的 tabs 高亮顯示
-  "workbench.editor.highlightModifiedTabs": true,
   // 設置最上方 tabs 顯示 1 列或多列
   "workbench.editor.wrapTabs": true,
   // 修改顯示新 tabs 的順序
@@ -80,8 +81,12 @@
   "workbench.list.multiSelectModifier": "ctrlCmd",
   "workbench.colorCustomizations": {
     // 修改程式碼左側對齊線的顏色
-    "editorIndentGuide.background1": "#404040"
+    "editorIndentGuide.background1": "#404040",
+    // 修改 tab 上方顯示的顏色
+    "tab.activeBorderTop": "#FFFFFF"
   },
+  // 在比較上一個 git commit 的該檔改變的內容時，是否隱藏未更動的部份
+  "diffEditor.hideUnchangedRegions.enabled": true,
   // 預設使用 pnpm 包管理器
   "npm.packageManager": "pnpm",
   // -----------------------------
@@ -137,8 +142,10 @@
     "editor.formatOnType": true
   },
   // -----------------------------
-  // --------- Haskell ---------
+  // ---------- Haskell ----------
   // -----------------------------
+  "haskell.manageHLS": "GHCup",
+  "haskell.hlint.executablePath": "hlint",
   "[haskell]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -146,8 +153,7 @@
   // -----------------------------
   // --------- Codeium AI ---------
   // -----------------------------
-  "codeium.enableSearch": true,
-  "diffEditor.hideUnchangedRegions.enabled": true
+  "codeium.enableSearch": true
   // -----------------------------
   // -- The End of the Settings --
   // -----------------------------

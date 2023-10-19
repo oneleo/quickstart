@@ -91,6 +91,7 @@ Should I generate a simple project with sensible defaults? [default: y] y
 - Run Haskell Project
 
 ```shell
+%> cabal update
 %> cabal install
 %> cabal build
 %> cabal run

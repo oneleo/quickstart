@@ -25,7 +25,7 @@
 
 ```shell
 ### System and development
-% brew install --cask cakebrew blackhole-2ch karabiner-elements gpg-suite-no-mail
+% brew install --cask cakebrew blackhole-2ch karabiner-elements gpg-suite-no-mail rectangle
 
 ### Development
 % brew install --cask postman github ganache ghcup graphql-playground visual-studio-code
@@ -64,6 +64,7 @@
   - [iMovie](https://apps.apple.com/tw/app/imovie/id408981434)
   - [ColorSlurp](https://apps.apple.com/tr/app/colorslurp/id1287239339)
   - [Gifski](https://apps.apple.com/app/id1351639930)
+  - [Hidden Bar](https://apps.apple.com/tw/app/hidden-bar/id1452453066)
 
 ## Windows
 
