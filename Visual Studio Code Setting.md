@@ -57,7 +57,7 @@
   // 是否在 Quick Open 的檔案結果中，包含全域符號搜尋中的結果
   "search.quickOpen.includeSymbols": true,
   // 是否顯示上方的 tabs
-  "workbench.editor.showTabs": true,
+  "workbench.editor.showTabs": "multiple",
   // 未存檔的 tabs 高亮顯示
   "workbench.editor.highlightModifiedTabs": true,
   // 設置上方 tabs 寬度的最大值及最小值
@@ -153,7 +153,19 @@
   // -----------------------------
   // --------- Codeium AI ---------
   // -----------------------------
-  "codeium.enableSearch": true
+  "codeium.enableSearch": true,
+  // -----------------------------
+  // -------- Nx Console --------
+  // -----------------------------
+  "nxConsole.showNodeVersionOnStartup": false,
+  // -----------------------------
+  // ------- SVG Previewer -------
+  // -----------------------------
+  "svg.preview.mode": "svg",
+  // -----------------------------
+  // --------- PlantUML ---------
+  // -----------------------------
+  "plantuml.server": "https://www.plantuml.com/plantuml"
   // -----------------------------
   // -- The End of the Settings --
   // -----------------------------
